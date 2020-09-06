@@ -1,0 +1,177 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #61122f;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #f6b319;
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-brand{
+  padding-top: 12px;
+}
+
+.navbar-brand h1{
+  font-family: 'lora' , serif;
+  color: #557c3e;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 0.80;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus{
+  text-decoration: none;
+}
+
+#nav-list {
+  margin-top: 10px;
+  border-top: 2px solid #fff;
+}
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -35px; 
+ }
+
+/* FOOTER */
+.panel-footer {
+  margin-top: 300px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+#chicken, #beef, #sushi {
+  line-height: 2;
+}
+#chicken > span, #beef > span , #sushi > span {
+  font-size: 1.3em;
+}
+
+/* END FOOTER */
+.row>div>section{
+  border: 2px solid black;
+  background-color: #5dbcd2;
+  font-family: 'Aclonica';
+  color: black;
+  padding: 10px;
+  margin: 10px;
+  position: relative;
+}
+
+.chicken-title h3, .beef-title h3, .sushi-title h3{
+  position: absolute;
+  top: -2px;
+  right: 32.5%;
+  width: 35%;
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.chicken-text, .beef-text, .sushi-text{
+  margin-top: 28px;
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  #header-nav {
+    height: 80px;
+  }
+  .navbar-brand{
+    padding-top: 22px;
+    font-size: 22px;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  #header-nav {
+    height: 80px;
+  }
+  .navbar-brand{
+    padding-top: 22px;
+    font-size: 22px;
+  }
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  
+ #header-nav {
+    height: 70px;
+  }
+  .navbar-brand{ /* Restaurant name */
+    padding-top: 23px;
+    font-size: 25; /* 1vw = 1% of viewport width */
+  }
+  
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  } 
+  
+  /* Footer */
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .panel-footer section:nth-child(3) {
+    margin-bottom: 0; /* margin already exists on the whole row */
+  } 
+  .panel-footer section hr {
+    width: 50%;
+  }
+  /* End Footer */
+  /*.navbar-collapse.collapse {
+    display: none !important;
+  }
+  .navbar-collapse.collapse.in {
+    display: block !important;
+  }
+  .navbar-header .collapse, .navbar-toggle {
+    display:block !important;
+  }
+  .navbar-header {
+    float:none;
+  }*/
+}
+
+/**********Extra Small devices only **********/
+@media (max-width: 767px) {
+  
+  /* Footer */
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .panel-footer section:nth-child(3) {
+    margin-bottom: 0; /* margin already exists on the whole row */
+  } 
+  .panel-footer section hr {
+    width: 50%;
+  }
+}
